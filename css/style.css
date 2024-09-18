@@ -1,0 +1,512 @@
+
+
+
+/* Estilos generales */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+/* estilo header con boostrap */
+.header {
+    background-color: black;
+    position: fixed;
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 15px;
+}
+
+/* Logo */
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 20px;
+    width: auto;
+}
+
+/* Estilos del Navbar */
+.navbar {
+    width: 100%;
+    color: white;
+}
+
+/* aca no se como hacer para q las rayitas del menu hamburguesa queden blancas */
+
+.navbar-toggler {
+    border-color: #ddd;
+    color: #ddd;
+    background-color: #ddd;
+    stroke: #ddd;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Estilos de los enlaces */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .nav-item {
+    padding: 0 20px;
+}
+
+.nav-links .nav-link {
+    color: whitesmoke;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links .nav-link:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos de la búsqueda */
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.search-form {
+    display: flex;
+    margin: 0;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.icon {
+    color: white;
+}
+
+
+/* Estilos del Main */
+main {
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 325px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+.banner-ppal{
+    width: 100%;
+    padding: 25px;
+}
+
+/* flex de abajo del banner */
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.main-content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.shop-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.image-large {
+    background-color: #000; 
+    padding: 20px;
+}
+
+.image-large img {
+    max-width: 100%;
+    height: auto;
+}
+
+.side-content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 1;
+}
+
+.grid-item {
+    flex: 1;
+    min-width: 10px;
+    background-color: #f4f4f4;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.titles{
+    padding: 0 25px;
+}
+
+/* cards */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+h1 span {
+    display: block;
+}
+
+.bestseller {
+    color: red;
+}
+
+.h5-pages-indicator {
+    padding: 0px 50px;
+}
+
+.filtros {
+    background-color: white;
+    margin: 50px 0px 0px 0px;
+    width: 300px;
+    height: 400px;
+    overflow: scroll;
+}
+
+#img-publicity {
+    width: 250px;
+    height: 400px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* seccion sports */
+
+.shop-section {
+    margin: 20px;
+}
+
+.shop-section h2 {
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1; 
+    margin: 0 10px; 
+    border-radius: 15px; 
+    overflow: hidden; 
+}
+
+.card img {
+    width: 100%; 
+    height: auto; 
+    display: block;
+    border-radius: 10px; 
+}
+
+/* seccion banner yoga y basket */
+
+.back-img {
+    background-image: url(../img/banner-basket.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 30px top 0;
+    height: 900px;
+    width: calc(100% - 30px);
+    position: relative; 
+    border-radius: 15px;
+}
+
+.btn-banner-basket {
+    position: absolute; 
+    left: 250px; 
+    top: 500px; 
+    padding: 10px 50px;
+    background-color: #2B2B2B; 
+    border-radius: 15PX;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+.back-img2 {
+    background-image: url(../img/banner-yoga.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 30px top 0;
+    height: 900px;
+    width: calc(100% - 30px);
+    position: relative; 
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.btn-banner-yoga {
+    position: absolute; 
+    left: 250px; 
+    top: 500px; 
+    padding: 10px 50px;
+    background-color: #2B2B2B; 
+    border-radius: 15PX;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+/* seccion sky no limits */
+
+.sky-img{
+    width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.banner-sky{
+    text-align: center;
+    margin: 20px;
+}
+
+/* seccion jordan */
+
+.jordan-img{
+    width: 100%;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.banner-jordan-section{
+    text-align: center;
+}
+
+/* Sección cards Jordan */
+
+.product-section {
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    text-align: center;
+}
+
+.product-item img {
+    width: 400px; /* Ajusta según sea necesario */
+    height: auto;
+}
+
+.card1 {
+    width: 325px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Estilos del Footer */
+footer {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 100px 0px 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.col p {
+    margin-bottom: 8px;
+}
+
+/* categoria kids */
+
+.banner-kids{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+}
+
+/* categoria men */
+
+.banner-men{
+    width: 100%;
+    padding: 25px;
+}
+
+
+/* categoria women */
+
+.carousel-slide{
+    width: 100%;
+    padding: 25px;
+}
+
+
+
+/* media queries */
+
+/* tablets (768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    h1 {
+        font-size: 28px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .mobile-img{
+        display: none;
+    }
+}
+
+/* mobile (menor a 768px) */
+@media (max-width: 767px) {
+    
+    h1 {
+        font-size: 24px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin: 5px 0;
+    }
+    .navbar {
+        text-align: center;
+    }
+    .container1 {
+        display: none;
+    }
+    .banner-ppal{
+        margin: 0px;
+        padding: 0;
+        height: 700px;
+        display: none;
+    }
+    .header{
+        margin: 0px;
+        padding: 0px;
+    }
+    .mobile-img {
+        display: block;
+    }
+}
+    
+    
+
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
